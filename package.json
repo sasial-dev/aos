@@ -30,7 +30,7 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "lodash": "^17.0.21"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
