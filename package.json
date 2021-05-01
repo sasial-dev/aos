@@ -8,6 +8,9 @@
   "main": "dist/aos.cjs.js",
   "module": "dist/aos.esm.js",
   "browser": "dist/aos.js",
+  "engines" : {
+    "node" : ">=12.0.0 <13.0.0 || >=14.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sasial-dev/aos.git"
