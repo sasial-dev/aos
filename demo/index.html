@@ -54,7 +54,7 @@
         });
 
         window.addEventListener('scroll', function() {
-          scrollCounter.innerHTML = window.pageYOffset;
+          scrollCounter.innerHTML = Math.trunc(window.pageYOffset);
         });
       }
     </script>
