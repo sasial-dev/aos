@@ -3,20 +3,34 @@
   "version": "3.0.0-rc.1",
   "description": "Animate on scroll library",
   "homepage": "https://michalsnik.github.io/aos/",
-  "author": "Michał Sajnóg <michal.sajnog@hotmail.com>",
-  "license": "MIT",
-  "main": "dist/aos.cjs.js",
-  "module": "dist/aos.esm.js",
-  "browser": "dist/aos.js",
-  "engines" : {
-    "node" : ">=12.0.0 <13.0.0 || >=14.0.0"
+  "bugs": {
+    "url": "https://github.com/sasial-dev/aos/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sasial-dev/aos.git"
   },
-  "bugs": {
-    "url": "https://github.com/sasial-dev/aos/issues"
+  "license": "MIT",
+  "author": "Michał Sajnóg <michal.sajnog@hotmail.com>",
+  "main": "dist/aos.cjs.js",
+  "module": "dist/aos.esm.js",
+  "browser": "dist/aos.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "watch": "cross-env NODE_ENV=dev rollup -c -w",
+    "serve": "node ./scripts/start-server.js",
+    "dev": "npm-run-all --parallel serve watch",
+    "test": "yarn lint && cross-env NODE_ENV=test node ./scripts/run-cypress-tests.js",
+    "test:dev": "cypress open",
+    "lint": "eslint src/js/** cypress/plugins/** cypress/integration/** cypress/support/** scripts/**",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "lodash": "^17.0.21"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
@@ -44,22 +58,7 @@
     "rollup-plugin-postcss": "^4.0.0",
     "terser": "^5.7.0"
   },
-  "dependencies": {
-    "lodash.debounce": "^4.0.8",
-    "lodash.throttle": "^4.1.1"
-  },
-  "scripts": {
-    "build": "cross-env NODE_ENV=production rollup -c",
-    "watch": "cross-env NODE_ENV=dev rollup -c -w",
-    "serve": "node ./scripts/start-server.js",
-    "dev": "npm-run-all --parallel serve watch",
-    "test": "yarn lint && cross-env NODE_ENV=test node ./scripts/run-cypress-tests.js",
-    "test:dev": "cypress open",
-    "lint": "eslint src/js/** cypress/plugins/** cypress/integrations/** cypress/support/** scripts/**",
-    "prepare": "npm run build"
-  },
-  "files": [
-    "dist",
-    "src"
-  ]
+  "engines": {
+    "node": ">=12.0.0 <13.0.0 || >=14.0.0"
+  }
 }
