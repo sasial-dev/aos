@@ -1,11 +1,10 @@
 {
   "presets": [
-    ["env", {
+    ["@babel/preset-env", {
       "modules": false
     }]
   ],
   "plugins": [
-    "transform-object-assign",
-    "external-helpers"
+    "@babel/plugin-transform-object-assign"
   ]
 }
