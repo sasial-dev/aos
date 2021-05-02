@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/sasial-dev/aos.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "author": "Michał Sajnóg <michal.sajnog@hotmail.com>",
   "main": "dist/aos.cjs.js",
   "module": "dist/aos.esm.js",
