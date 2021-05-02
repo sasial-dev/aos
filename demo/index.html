@@ -53,6 +53,8 @@
           console.log('in!', e.detail);
         });
 
+        scrollCounter.innerHTML = Math.trunc(window.pageYOffset);
+
         window.addEventListener('scroll', function() {
           scrollCounter.innerHTML = Math.trunc(window.pageYOffset);
         });
