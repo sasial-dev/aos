@@ -1,15 +1,12 @@
-[![AOS - Animate on scroll library](https://s32.postimg.org/ktvt59hol/aos_header.png)](http://michalsnik.github.io/aos/)
+[![AOS - Animate on scroll library](/images/aos_header.png)](http://michalsnik.github.io/aos/)
 
-[![NPM version](https://img.shields.io/npm/v/aos/next.svg?style=flat)](https://npmjs.org/package/aos)
-[![NPM downloads](https://img.shields.io/npm/dm/aos.svg?style=flat)](https://npmjs.org/package/aos)
-[![Build Status](https://travis-ci.org/michalsnik/aos.svg?branch=master)](https://travis-ci.org/michalsnik/aos)
-[![Gitter](https://badges.gitter.im/michalsnik/aos.svg)](https://gitter.im/michalsnik/aos?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![NPM version](https://img.shields.io/npm/v/sasial-dev/aos.svg?style=flat)](https://npmjs.org/package/aos)
+[![NPM downloads](https://img.shields.io/npm/dm/@sasial-dev/aos.svg?style=flat)](https://npmjs.org/package/aos)
+[![Build Status](https://travis-ci.org/sasial-dev/aos.svg?branch=next)](https://travis-ci.org/michalsnik/aos)
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/michalsnik.svg?style=social)](https://twitter.com/michalsnik) [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/home?status=AOS%20-%20Animate%20on%20Scroll%20library%0Ahttps%3A//github.com/michalsnik/aos)
+## Please Note
 
-## :exclamation::exclamation::exclamation: This is README for aos@next :exclamation::exclamation::exclamation:
-
-For last stable release (v2) go [here](https://github.com/michalsnik/aos/tree/v2)
+This is a maintained fork of the original AOS library. It has had its dependencies updated and other updated changes. It has been relisenced from the MIT Lisence to the Apache 2.0 Lisence.
 
 ---
 ### 🚀 [Demo](http://michalsnik.github.io/aos/)
@@ -20,7 +17,7 @@ For last stable release (v2) go [here](https://github.com/michalsnik/aos/tree/v2
 - [With anchor-placement and different easings](http://codepen.io/michalsnik/pen/EyxoNm)
 - [With simple custom animations](http://codepen.io/michalsnik/pen/WxvNvE)
 
-👉 To get a better understanding how this actually works, I encourage you to check [my post on CSS-tricks](https://css-tricks.com/aos-css-driven-scroll-animation-library/).
+👉 To get a better understanding how this actually works, you can check out [a post on CSS-tricks](https://css-tricks.com/aos-css-driven-scroll-animation-library/) by the original author of this library.
 
 ---
 
@@ -31,12 +28,12 @@ For last stable release (v2) go [here](https://github.com/michalsnik/aos/tree/v2
 Add styles in `<head>`:
 
 ```html
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@sasial-dev/aos/dist/aos.css" />
 ```
 
 Add script right before closing `</body>` tag, and initialize AOS:
 ```html
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/@sasial-dev/aos/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
@@ -45,8 +42,8 @@ Add script right before closing `</body>` tag, and initialize AOS:
 ### Using package managers
 
 Install `aos` package:
-* `yarn add aos@next`
-* or `npm install --save aos@next`
+* `yarn add @sasial-dev/aos`
+* or `npm install --save @sasial-dev/aos`
 
 Import script, styles and initialize AOS:
 ```js
@@ -353,6 +350,6 @@ Example usage:
 
 ---
 
-## ❔Questions
+## ❔ Questions, Support & Bugs
 
-If you found a bug, have a question or an idea, please check [AOS contribution guide](CONTRIBUTING.md) and don't hesitate to create new issues.
+If you found a bug, have a question or an idea, please check [AOS contribution guide](CONTRIBUTING.md) and don't hesitate to create new issues. Although this is not a [Lundstrong](https://github.com/Lundstrong) project, support is avaliable on the Lundstrong [discord](https://discord.gg/2w9PmHZPwX). 
